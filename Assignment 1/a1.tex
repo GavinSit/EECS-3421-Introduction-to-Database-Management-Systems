@@ -1,0 +1,130 @@
+\documentclass{article}
+%\usepackage[a4paper, total={6in, 8in}]{geometry}
+% use narrow margins
+\usepackage[margin=0.5in]{geometry}
+
+\title{Assignment 1 - Relational Algebra}
+%\author{papaggel}
+\date{May 2020}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team information}
+\begin{enumerate}
+\item Member 1: {login, first name, last name, email, student number}
+\item Member 2: {login, first name, last name, email, student number}
+\end{enumerate}
+
+
+\section*{Relational Algebra Symbols\footnote{source: http://www.cs.uleth.ca/~rice/latex/worksheet.pdf}}
+
+\begin{center}
+ \begin{tabular}{|c | c | c|} 
+ \hline
+ Symbol name & LaTex Code & symbol \\ [1ex] 
+ \hline\hline
+assignment & := & $:=$  \\ 
+select & \textbackslash sigma & $\sigma$ \\ 
+project & \textbackslash pi & $\pi$ \\ 
+rename & \textbackslash rho & $\rho$ \\ 
+cross product & \textbackslash times & $\times$ \\ 
+natural join & \textbackslash bowtie & $\bowtie$ \\ 
+theta join & \textbackslash bowtie & $\bowtie_{\theta}$ \\ 
+less than & $<$ & $<$ \\ 
+greater than & $>$ & $>$ \\ 
+less than or equal & \textbackslash leq & $\leq$ \\ 
+greater than or equal & \textbackslash geq & $\geq$ \\ 
+equal & $=$ & $=$ \\ 
+not equal & \textbackslash neq & $\neq$ \\ 
+and & \textbackslash wedge & $\wedge$ \\ 
+or & \textbackslash vee & $\vee$ \\ 
+not & \textbackslash neg & $\neg$  \\ [1ex]  
+  \hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+\section*{Part 1: Additional Integrity Constraints}
+
+\begin{enumerate}
+% integrity constraint 1 
+\item
+
+// example comment
+
+$temp1 := (customer \times account) $
+
+// example comment
+
+$temp2  := \sigma_{customer.sin = account.sin}(temp1)$
+
+// example comment
+
+$answer1 := \pi_{(name, customer.sin, account-number)}(temp2)$
+
+% integrity constraint 2
+\item ...
+
+% integrity constraint 3
+\item ...
+
+% integrity constraint 4
+\item ...
+
+% integrity constraint 5
+\item ...
+
+\end{enumerate}
+
+\pagebreak 
+\section*{Part 2: Queries}
+
+\begin{enumerate}
+
+% query 1
+\item
+
+// example comment
+
+$temp1 := (customer \times account) $
+
+// example comment
+
+$temp2  := \sigma_{customer.sin = account.sin}(temp1)$
+
+// example comment
+
+$basic-cust-accts := \pi_{(name, customer.sin, account-number)}(temp2)$
+
+% query 2
+\item ...
+
+% query 3
+\item ...
+
+% query 4
+\item ...
+
+% query 5
+\item ...
+
+% query 6
+\item ...
+
+% query 7
+\item ...
+
+% query 8
+\item ...
+
+% query 9
+\item ...
+
+% query 10
+\item ...
+
+\end{enumerate}
+
+\end{document}
